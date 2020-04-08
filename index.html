@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Task List</title>
+    <style>
+      .fa-remove{
+        color: red;
+        
+      }
+      .fa-remove:hover{
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content">
+              <span style="font-size: 35px;">Task List</span>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="task" id="task">
+                  <label for="task">New Task</label>
+                </div>
+                <input type="submit" class="btn" id="add" value="Add Task">
+              </div>  
+               
+            </div>
+            <div class="card-action" id="remove">
+              <h5>Tasks to do!</h5>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="filter" id="filter">
+                  <label for="filter">Filter Task</label>
+                </div>
+              </div>
+              <ul id="todo" style="padding: 5px;">
+                <!--<li class="card">
+                  Bathing
+                  <i class="fa fa-remove secondary-content"></i>
+                </li> -->
+                
+              </ul>
+              <input type="submit" id="clear" value="Clear All" class="btn black">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
